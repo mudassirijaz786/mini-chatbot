@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>what is </pattern>
+    <template>What is what?</template>
+  </category>
+   <category>
+    <pattern>Hi</pattern>
+    <template>
+        <random>
+           <li>hello </li>
+           <li>hey </li>
+           <li>hola </li>
+        </random>
+    </template>
+   </category>
+   <category>
+      <pattern>I LIKE *</pattern>
+      <template>
+         I too like <star/>.
+      </template>
+   </category>
+   <category>
+      <pattern>when * eat *</pattern>
+      <template>
+         i think <star index = "1"/> ate  <star index = "2"/> yesterday
+      </template>
+   </category>
+   <category>
+       <pattern>who is human</pattern>
+       <template>you are human, i think</template>
+    </category>
+    <category>
+       <pattern>who is imran khan </pattern>
+       <template>president of pakistan</template>
+    </category>
+   <category>
+      <pattern>who is *</pattern>
+      <template>
+        <srai> <star/> </srai>
+      </template>
+   </category>
+    <category>
+      <pattern>I am *</pattern>
+      <template>
+         Hello <set name = "username"> <star/>! </set>
+      </template>  
+   </category>  
+   <category>
+      <pattern>Good Night</pattern>
+      <template>
+         Hi <get name = "username"/> Thanks for the conversation!
+      </template>  
+   </category>  
+</aiml>
