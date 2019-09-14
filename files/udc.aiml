@@ -26,18 +26,32 @@
          i think <star index = "1"/> ate  <star index = "2"/> yesterday
       </template>
    </category>
+ <category>
+      <pattern> WHO IS ALBERT EINSTEIN </pattern>
+      <template>Albert Einstein was a German physicist.</template>
+   </category>
+   
    <category>
-       <pattern>who is human</pattern>
-       <template>you are human, i think</template>
-    </category>
-    <category>
-       <pattern>who is imran khan </pattern>
-       <template>president of pakistan</template>
-    </category>
+      <pattern> WHO IS Isaac NEWTON </pattern>
+      <template>Isaac Newton was a English physicist and mathematician.</template>
+   </category>
+   
    <category>
-      <pattern>who is *</pattern>
+      <pattern>DO YOU KNOW WHO * IS</pattern>
       <template>
-        <srai> <star/> </srai>
+         <srai>WHO IS <star/></srai>
+      </template>
+   </category>
+   
+   <category>
+      <pattern>BYE</pattern>
+      <template>Good Bye!</template>
+   </category>
+   
+   <category>
+      <pattern>BYE *</pattern>
+      <template>
+         <srai>BYE</srai>
       </template>
    </category>
     <category>
